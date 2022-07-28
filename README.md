@@ -1,4 +1,4 @@
-![portal banner](Sinkhole-Intelligence-Capstone\07_Images\sinkholeintelligence_banner.PNG)
+![portal banner](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/blob/7aef95da0340b05fae20f7020831b2a8944381a3/Sinkhole-Intelligence-Capstone/07_Images/sinkholeintelligence_banner.PNG)
 
 _Last updated on 7/28/2022_
 
@@ -19,7 +19,7 @@ Sinkholes are reportedly becoming more common with urbanization. They are danger
 
 A risk intelligence portal that utilizes 🌎 satellite imagery and 📊 open-data to enable the identification and visualization of areas with heightened 🚧 risks of sinkhole formations.
 
-![Portal Screenshot](Sinkhole-Intelligence-Capstone\07_Images\sinkhole-risk-intelligence-portal-screenshot.png)
+![Portal Screenshot](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/blob/7aef95da0340b05fae20f7020831b2a8944381a3/Sinkhole-Intelligence-Capstone/07_Images/sinkhole-risk-intelligence-portal-screenshot.png)
 
 <br>
 
@@ -28,7 +28,7 @@ A risk intelligence portal that utilizes 🌎 satellite imagery and 📊 open-da
 
 The folders in our Github repository are broken down by the stages of our model's pipeline, please see the links below for additional details and to find the code and data used to generate our model.
 
-![Technical Diagram](Sinkhole-Intelligence-Capstone\07_Images\technical_diagram.png)
+![Technical Diagram](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/blob/7aef95da0340b05fae20f7020831b2a8944381a3/Sinkhole-Intelligence-Capstone/07_Images/technical_diagram.png)
 
 [__Stage 1__](Sinkhole-Intelligence-Capstone\01_Data_Inputs): Our innovative model combines data from open data sources such as Satellite images from Sentinel-2, NOAA weather data, Florida sinkhole incidence data, and soil composition.
 
@@ -46,7 +46,7 @@ The folders in our Github repository are broken down by the stages of our model'
 ---
 Our best performing XGBoost model achieved an F1-Score of __78.26%__, Precision of 75%, and Recall of 81.81%. See model evaluation comparision of Logistic Regression, Random Forest, and XGBoost below.
 
-![Technical Diagram](Sinkhole-Intelligence-Capstone\07_Images\technical_diagram.png)
+![Model Eval](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/blob/167adf49739e4c60bd95364eb36ce4f9959cd119/Sinkhole-Intelligence-Capstone/07_Images/model-evaluation.png)
 
 <br>
 
