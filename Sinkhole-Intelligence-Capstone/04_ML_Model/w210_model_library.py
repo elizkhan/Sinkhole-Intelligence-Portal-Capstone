@@ -26,6 +26,45 @@ import matplotlib.pyplot as plt
 import math
 import random
 
+
+#TO classify an attribute in right cathegory
+def fattrtype(attr, attrdict):
+    
+    for key in attrdict.keys():
+        if attr in set(attrdict[key]):
+            return key
+
+# To get dataframe with attribute importance
+def importance_attr(x_variables, model, attrdict):
+    '''
+    input: 
+    x_variables: list of variables used for the model
+    model: model that has feature_importance_
+    attrdict: dictionary with the classification of all variables
+    
+    Output: Dataframe with list of attributes, their level of importance, cummulative importance and type.
+    '''
+    
+    df_import = pd.DataFrame({"attribute": np.array(x_variables), 
+                            "importance": model.feature_importances_}).sort_values("importance", ascending=False )
+    
+    df_import['CUMSUM_importance'] = df_import['importance'].cumsum()
+    
+    df_import["attr_type"] = df_import.apply(lambda row: fattrtype(row['attribute'], 
+                          attrdict), axis=1)
+    
+    return df_import
+
+
+
+
+
+def findcountyfp(point, flcounty):
+    for index, row in flcounty.iterrows():
+        if point.within(row['geometry']):
+            return row["COUNTYFP"]
+    return "No_Florida"
+
 def print_confusion_matrix(Y_dev, Prediction, title):
     cfm = confusion_matrix(Y_dev,Prediction)
     start = 0 #It does not work
