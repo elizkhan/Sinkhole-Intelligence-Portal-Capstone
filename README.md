@@ -30,15 +30,15 @@ The folders in our Github repository are broken down by the stages of our model'
 
 ![Technical Diagram](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/blob/7aef95da0340b05fae20f7020831b2a8944381a3/Sinkhole-Intelligence-Capstone/07_Images/technical_diagram.png)
 
-[__Stage 1__](Sinkhole-Intelligence-Capstone\01_Data_Inputs): Our innovative model combines data from open data sources such as Satellite images from Sentinel-2, NOAA weather data, Florida sinkhole incidence data, and soil composition.
+[__Stage 1__](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/tree/main/Sinkhole-Intelligence-Capstone/01_Data_Inputs): Our innovative model combines data from open data sources such as Satellite images from Sentinel-2, NOAA weather data, Florida sinkhole incidence data, and soil composition.
 
-[__Stage 2__](Sinkhole-Intelligence-Capstone\02_Land_Use_Classification): A RESTNET-50 model was trained on the 27,000 EuroSAT images to extract land use features from the Sentinel-2 images we supplied from the entire state of Florida. These land use classification probabilties were then combined with the other datasets as inputs to our model.
+[__Stage 2__](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/tree/main/Sinkhole-Intelligence-Capstone/02_Land_Use_Classification): A RESTNET-50 model was trained on the 27,000 EuroSAT images to extract land use features from the Sentinel-2 images we supplied from the entire state of Florida. These land use classification probabilties were then combined with the other datasets as inputs to our model.
 
-[__Stage 3__](Sinkhole-Intelligence-Capstone\03_Data_Wrangling): We combined the disparate datasets by closest proximity to the 640x640 (64x64 pixel) meter tile centroid (i.e. weather data was added by including the closest weather station metrics to the tile centroid). Next, we selected the final 34 features for our model using feature importance to identify the features that contribute the most to our model's prediction.
+[__Stage 3__](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/tree/main/Sinkhole-Intelligence-Capstone/03_Data_Wrangling): We combined the disparate datasets by closest proximity to the 640x640 (64x64 pixel) meter tile centroid (i.e. weather data was added by including the closest weather station metrics to the tile centroid). Next, we selected the final 34 features for our model using feature importance to identify the features that contribute the most to our model's prediction.
 
-[__Stage 4__](Sinkhole-Intelligence-Capstone\04_ML_Model): We evaluated Logistic Regression, Random Forest, and XGBoost Models and ultimately the XGBoost model had the best performance in terms of F1-Score and model fit. Thus, we passed in the models features to the XGBoost models to get the sinkhole presence probabilities.
+[__Stage 4__](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/tree/main/Sinkhole-Intelligence-Capstone/04_ML_Model): We evaluated Logistic Regression, Random Forest, and XGBoost Models and ultimately the XGBoost model had the best performance in terms of F1-Score and model fit. Thus, we passed in the models features to the XGBoost models to get the sinkhole presence probabilities.
 
-[__Stage 5__](Sinkhole-Intelligence-Capstone\05_Sinkhole_Risk): We translated the sinkhole presence probability scores into a risk scale 1 to 5 based on the distribution of the probabilities. These risk scores were then utilized in our Sinkhole Risk Intelligence portal to inform homebuyers on the future sinkhole risk of a given zipcode or county in Florida.
+[__Stage 5__](https://github.com/elizkhan/Sinkhole-Intelligence-Portal-Capstone/tree/main/Sinkhole-Intelligence-Capstone/05_Sinkhole_Risk): We translated the sinkhole presence probability scores into a risk scale 1 to 5 based on the distribution of the probabilities. These risk scores were then utilized in our Sinkhole Risk Intelligence portal to inform homebuyers on the future sinkhole risk of a given zipcode or county in Florida.
 
 <br>
 
